@@ -271,7 +271,7 @@ const CartPages = () => {
     <div>
       <Navbar />
       <Toaster />
-      <div className="container">
+      <div className="container mt-3">
         <div className="row">
           <div className="col-md-12">
             <div className="text-center bg-light p-2">

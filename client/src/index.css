@@ -29,24 +29,44 @@ form input{
   border-radius: none;
   outline: none;
   padding: 10px;
+  background-color: transparent;
 }
 form input::placeholder{
   margin-left: 15px;
+  color: #ff6518;
 }
+/* form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin: auto;
+  background-color: #d0d0cf68;
+
+  padding: 20px; 
+  border-radius: 5px; 
+} */
+
 form {
   display: flex;
   align-items: center;
   justify-content: center;
   width: 100%;
   margin: auto;
-
+  background: rgba(255, 255, 255, 0.1); /* Semi-transparent background */
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37); /* Glassy shadow effect */
+  backdrop-filter: blur(10px); /* Background blur for glass effect */
+  -webkit-backdrop-filter: blur(10px); /* Safari support */
+  border-radius: 10px; /* Rounded corners */
+  border: 1px solid rgba(255, 255, 255, 0.18); /* Subtle border */
   padding: 20px; /* Optional: Adds padding inside the form */
-  border-radius: 5px; /* Optional: Adds rounded corners */
 }
+
 form button{
   all: unset;
-  background-color: black;
+  background-color: #ff6518;
   color: white;
+  border-radius: 30px;
 
   text-align: center;
   margin-bottom: 10px;

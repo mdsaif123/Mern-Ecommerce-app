@@ -36,8 +36,9 @@ const Register = () => {
       <div className="container">
         <div className="row">
           <div className="col-md-4 col-7-offset m-auto">
+          <h3 className="text-center  form-heading my-3" style={{color:"#ff6518"}}>Register</h3>
             <form action="" className="my-3" onSubmit={handleSubmit}>
-              <h3 className="text-center text-dark form-heading">Register</h3>
+             
               <div className="d-flex flex-column">
                 <input
                   className="my-3"
@@ -82,7 +83,7 @@ const Register = () => {
                   onChange={(e) => setanswer(e.target.value)}
                 />
 
-                <button>Register</button>
+                <button className="p-2">Register</button>
                 <div className="d-flex justify-content-center ">
                 <p className="mx-2 text-secondary">already an account?</p>
                 <NavLink to="/login" style={{ textDecoration: 'none' }}>Login here</NavLink>

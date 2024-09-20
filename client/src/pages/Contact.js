@@ -6,12 +6,15 @@ const Contact = () => {
     <div>
     <Navbar/>
       <div className="containe mt-4">
-        <div className="row">
+      <div className="row">
+        <img src="https://gifographics.co/wp-content/uploads/2017/01/contact-us.gif" alt="" />
+      </div>
+        <div className="row mt-3">
             <div className="col-md-6 text-center">
-                <img style={{width:"500px"}} className='rounded' src="https://image6.slideserve.com/11606334/conatct-us-l.jpg" alt="" />
+                <img style={{width:"500px"}} className='rounded' src="https://www.meshini.com/themes/meshini-v3/assets/img/icons/contact_us.png" alt="" />
             </div>
             <div className="col-md-6">
-            <div className="contact-info">
+            <div className="contact-info mt-5">
         <h3>Contact Information</h3>
         <p><span className="icon"><i className="bi bi-telephone" /></span> Phone: +1 234 567 890</p>
         <p><span className="icon"><i className="bi bi-envelope" /></span> Email: support@example.com</p>
@@ -21,6 +24,11 @@ const Contact = () => {
             </div>
         </div>
       </div>
+      <hr />
+ <footer>
+ <p className='text-center'>Copyright-2024 &copy; : All right reserved</p>
+ </footer>
+
     </div>
   )
 }

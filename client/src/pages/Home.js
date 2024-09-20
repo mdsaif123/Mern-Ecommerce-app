@@ -11,7 +11,8 @@ import toast, { Toaster } from "react-hot-toast";
 import Banner from '../Components/Banner/Banner'
 import Offer from '../Components/Offer/Offer'
 import NewsLetter from '../Components/NewsLetter/NewsLetter'
-import { Footer } from 'antd/es/layout/layout'
+
+import { FaCartArrowDown } from "react-icons/fa";
 
 
 
@@ -105,8 +106,8 @@ const FilterProduct=async()=>{
     <Toaster />
     <div className="container my-3">
       <div className="row">
-        <div className="col-md-3">
-      <h4 className="text-center">Filter by category</h4>
+        <div className="col-md-3 my-5">
+      <h4 className="">Filter by category</h4>
       <div className="d-flex flex-column">
      {categories.map((c)=>(
       <Checkbox key={c._id} onChange={(e)=> handleFilter(e.target.checked,c._id)}>
@@ -118,7 +119,7 @@ const FilterProduct=async()=>{
 
 {/* //price filter */}
 
-     <h4 className="text-center mt-4">Filter by Price</h4>
+     <h4 className=" mt-4">Filter by Price</h4>
       <div className="d-flex flex-column">
     <Radio.Group onChange={e=>setradio(e.target.value)}>
       {Prices?.map(p=>(
@@ -141,7 +142,7 @@ const FilterProduct=async()=>{
     {products?.map((p) => (
       <div className="col-md-4" key={p._id}>
         <div className="card m-2">
-          <img style={{width:"200px"}}
+          <img style={{width:"auto" ,height:"300px"}}
             src={`http://localhost:8080/get-photo/${p._id}`}
             alt={p.name}
             className="card-img-top"
@@ -156,7 +157,7 @@ const FilterProduct=async()=>{
               setcart([...cart,p])
               toast.success("item-added")
               localStorage.setItem(cart,JSON.stringify([...cart,p]))
-              }}>Add to cart</button>
+              }}>Add to cart <FaCartArrowDown /></button>
             </div>
             
           </div>

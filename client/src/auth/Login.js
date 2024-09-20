@@ -46,8 +46,9 @@ const navigate=useNavigate()
       <div className="container">
         <div className="row">
           <div className="col-md-4 col-7-offset m-auto">
+          <h3 className="text-center  form-heading my-4" style={{color:"#ff6518"}}>Login</h3>
             <form action="" className="my-3" onSubmit={handleSubmit}>
-              <h3 className="text-center text-dark form-heading" style={{color:"#46BABE;"}}>Login</h3>
+              
               <div className="d-flex flex-column">
                 
                 <input
@@ -76,7 +77,7 @@ const navigate=useNavigate()
 
                 </div>
                 
-                <button className="my-3" >Login</button>
+                <button className="my-3 p-2" style={{ backgroundColor: 'ff6518' }} >Login</button>
                 <div className="d-flex justify-content-center ">
                 <p className="mx-2 text-secondary">Don't have an account?</p>
                 <NavLink to="/register" style={{ textDecoration: 'none' }}>Create Now</NavLink>

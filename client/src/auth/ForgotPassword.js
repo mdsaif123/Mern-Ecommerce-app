@@ -45,9 +45,10 @@ const ForgotPassword = () => {
       <Navbar />
       <div className="container">
         <div className="row">
-          <div className="col-md-4 col-7-offset m-auto">
+          <div className="col-md-4 col-7-offset m-auto my-5">
+          <h3 className="text-center  form-heading" style={{color:"#ff6518"}}>Forgot password</h3>
             <form action="" className="my-3" onSubmit={handleSubmit}>
-              <h3 className="text-center text-dark form-heading" style={{color:"#46BABE;"}}>Forgot password</h3>
+              
               <div className="d-flex flex-column">
                 
                 <input
@@ -82,7 +83,7 @@ const ForgotPassword = () => {
 
                 </div>
                 
-                <button className="my-3" >Reset</button>
+                <button className="my-3 p-2" >Reset</button>
                 <div className="d-flex justify-content-center ">
                 <p className="mx-2 text-secondary">Don't have an account?</p>
                 <NavLink to="/register" style={{ textDecoration: 'none' }}>Create Now</NavLink>
