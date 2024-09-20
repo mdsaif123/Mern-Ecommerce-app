@@ -1,0 +1,143 @@
+
+
+.hero {
+    height: 100vh;
+    /* background: linear-gradient(180deg, #ed7b41, #e1ffea22 60%); */
+    background: linear-gradient(rgba(0, 7, 58, 0.7),rgba(11, 1, 29, 0.7)), url("https://www.firstforwomen.com/wp-content/uploads/sites/2/2020/10/womens-clothing-store.jpg?resize=630");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    color: white;
+  }
+  .hero-left{
+    /* flex: 1; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    padding-left: 180px;
+    line-height: 1.1;
+  }
+  .hero-left h2{
+    color: #ff6518;
+    font-size: 20px;
+    font-weight: 600;
+  }
+  .hero-left p{
+    color: #ff6518;
+    font-size: 50px;
+    font-weight: 600;
+  }
+  .hero-hand-icon{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+  }
+  .hero-hand-icon img{
+    width: 105px;
+
+  }
+  .hero-latest-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    width: 310px;
+    height: 70px;
+    border-radius: 75px;
+    margin-top: 30px;
+    background: #ff6518;
+    color: white;
+    font-size: 22px;
+    font-weight: 500;
+    cursor: pointer;
+    box-shadow: 0px 4px 6px rgba(27, 25, 25, 0.642);
+
+  }
+
+  .hero-latest-btn:hover {
+    background: #ab4c1d
+  }
+  .hero-right {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* height: 30%; */
+    /* align-self: right; */
+    /* Glassmorphism effect */
+ /* background: rgba(255, 255, 255, 0.2);
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); */
+ 
+
+ 
+  }
+  
+.hero-right img{
+  width: 450px;
+
+}
+@media(max-width:500px){
+  .hero-left{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    padding-left: 50px;
+    
+  }
+  .hero-left p{
+    color: #ff6518;
+    font-size: 40px;
+    font-weight: 500;
+  }
+  .hero-hand-icon img{
+    width: 50px;
+
+  }
+  .hero-right img{
+    display: none;
+  
+  }
+  .hero-latest-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    width: 200px;
+    height: 50px;
+    border-radius: 75px;
+    margin-top: 10px;
+    background: #ff4141;
+    color: white;
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+
+  }
+}
+@media(max-width:1000px){
+  .hero-right img{
+    display: none;
+  
+  }
+  .hero {
+    height: 50vh;
+    background: linear-gradient(rgba(0, 7, 58, 0.7),rgba(11, 1, 29, 0.7)), url("https://www.lux-review.com/wp-content/uploads/2020/10/fashion-store.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  
+    display: flex;
+  }
+  .hero-left h2{
+    display: none;
+  }
+}
